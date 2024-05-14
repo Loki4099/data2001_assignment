@@ -1,1 +1,11 @@
+# Task 3
+## POI
 
+import pandas as pd
+
+points_of_interest = pd.read_csv("https://raw.githubusercontent.com/V-watson-g/data2001_assignment/main/Points_Of_Interest.csv")
+points_of_interest.head()
+
+missing_values = points_of_interest.isnull().sum()
+print("Missing values in Points of Interest dataset:")
+print(missing_values)
